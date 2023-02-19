@@ -19,7 +19,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute: "/",
-      getPages: [GetPage(name: "/", page: () => MyHomePage())],
+      getPages: [
+        GetPage(name: "/", page: () => MyHomePage()),
+        GetPage(name: "/detail", page: () => DetailPage()),
+        GetPage(name: "/content", page: () => ContentPage())
+      ],
     );
   }
 }
